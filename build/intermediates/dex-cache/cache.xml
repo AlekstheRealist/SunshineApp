@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Aleksreal7/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.5.2_e24582d2223279d1d842f10a3f01f56411f2e7b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Aleksreal7/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="true"
         optimize="true"
