@@ -28,6 +28,7 @@ local.properties
 *.iml
 
 app/src/main/AndroidManifest.xml
+app/build/
 
 # OS-specific files
 .DS_Store
