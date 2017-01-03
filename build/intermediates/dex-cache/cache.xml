@@ -3,11 +3,65 @@
 
     <item
         is-multidex="true"
+        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_b3b2aa4663c0ff3d5c57129273700b9400c4c805/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_c59c29477ea08fe0c799b270d875b5edce134f0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_64dd4c15f0fe49ad2cb1c03829269fc290737814/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_4e7f603b57959726b1251c7686e61ff70dd27f25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aleksreal7/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.5.2_e24582d2223279d1d842f10a3f01f56411f2e7b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aleksreal7/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_045a745935b0f7426b6c9afbf872849bf0e1b9c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="313d36c08df3c3cf29d740a665219a1365f9158c">
+        sha1="6bebc8a7c6e5d6218014e0b067db27a2f70d9cf7">
         <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_35aa6db6f268aa83fb4f004a2ec5938c42fd4a14/classes.dex" />
     </item>
     <item
@@ -21,20 +75,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_b3b2aa4663c0ff3d5c57129273700b9400c4c805/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4f3546607903347035308fa089e59dc919663379">
+        sha1="c2db8c67d9794db3e9529a901f48528ed2cb2ad6">
         <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_79817f9968c5cce28f8d5058b891dd2c7b070428/classes.dex" />
     </item>
     <item
@@ -66,57 +111,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_c59c29477ea08fe0c799b270d875b5edce134f0b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_64dd4c15f0fe49ad2cb1c03829269fc290737814/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
         <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_14c49edcb6b0f7d8c0cacfdc8eea6ef44a9b9242/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_4e7f603b57959726b1251c7686e61ff70dd27f25/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Aleksreal7/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
-        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.5.2_e24582d2223279d1d842f10a3f01f56411f2e7b6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Aleksreal7/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/Aleksreal7/AndroidStudioProjects/SunshineApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_045a745935b0f7426b6c9afbf872849bf0e1b9c2/classes.dex" />
     </item>
 
 </items>

@@ -27,6 +27,8 @@ local.properties
 .idea/vcs.xml
 *.iml
 
+app/src/main/AndroidManifest.xml
+
 # OS-specific files
 .DS_Store
 .DS_Store?
