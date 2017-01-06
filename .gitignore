@@ -9,6 +9,8 @@ local.properties
 
 # Gradle generated files
 .gradle/
+/build
+/app/google-services.json
 
 # Signing files
 .signing/
@@ -26,6 +28,9 @@ local.properties
 .idea/scopes/scope_settings.xml
 .idea/vcs.xml
 *.iml
+
+app/src/main/AndroidManifest.xml
+app/build/
 
 # OS-specific files
 .DS_Store
