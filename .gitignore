@@ -9,6 +9,8 @@ local.properties
 
 # Gradle generated files
 .gradle/
+/build
+/app/google-services.json
 
 # Signing files
 .signing/
