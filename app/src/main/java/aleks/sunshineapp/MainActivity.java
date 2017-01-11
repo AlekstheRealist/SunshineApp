@@ -18,9 +18,9 @@ import aleks.sunshineapp.sync.SunshineSyncAdapter;
 
 public class MainActivity extends ActionBarActivity implements ForecastFragment.Callback {
 
-    private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final String DETAILFRAGMENT_TAG = "DFTAG";
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
 
     private boolean mTwoPane;
@@ -52,7 +52,9 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
 
         SunshineSyncAdapter.initializeSyncAdapter(this);
 
-        if (!checkPlayServices()) {
+
+        if (checkPlayServices()) {
+
             SharedPreferences sharedPreferences =
                     PreferenceManager.getDefaultSharedPreferences(this);
             boolean sentToken = sharedPreferences.getBoolean(SENT_TOKEN_TO_SERVER, false);
@@ -87,7 +89,7 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
         super.onResume();
         String location = Utility.getPreferredLocation( this );
         if (location != null && !location.equals(mLocation)) {
-            ForecastFragment ff = (ForecastFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_forecast);
+            ForecastFragment ff = (ForecastFragment)getSupportFragmentManager().findFragmentById(R.id.fragment_forecast);
             if ( null != ff ) {
                 ff.onLocationChanged();
             }
@@ -124,14 +126,14 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
         int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
         if (resultCode != ConnectionResult.SUCCESS) {
             if (apiAvailability.isUserResolvableError(resultCode)) {
-                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show();
+                apiAvailability.getErrorDialog(this, resultCode,
+                        PLAY_SERVICES_RESOLUTION_REQUEST).show();
             } else {
-                Log.i(LOG_TAG, "This device is not supported");
+                Log.i(LOG_TAG, "This device is not supported.");
                 finish();
             }
             return false;
         }
-
         return true;
     }
 }

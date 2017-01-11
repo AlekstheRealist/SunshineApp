@@ -58,6 +58,7 @@ public class SettingsActivity extends PreferenceActivity
         String key = preference.getKey();
 
         if (preference instanceof ListPreference) {
+
             ListPreference listPreference = (ListPreference) preference;
             int prefIndex = listPreference.findIndexOfValue(stringValue);
             if (prefIndex >= 0) {
@@ -76,6 +77,7 @@ public class SettingsActivity extends PreferenceActivity
                     preference.setSummary(getString(R.string.pref_location_error_description, value.toString()));
                     break;
                 default:
+
                     preference.setSummary(stringValue);
             }
         } else {
@@ -90,9 +92,11 @@ public class SettingsActivity extends PreferenceActivity
         return true;
     }
 
+
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if ( key.equals(getString(R.string.pref_location_key)) ) {
+
             Utility.resetLocationStatus(this);
             SunshineSyncAdapter.syncImmediately(this);
         } else if ( key.equals(getString(R.string.pref_units_key)) ) {
