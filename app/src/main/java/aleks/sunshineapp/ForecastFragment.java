@@ -66,9 +66,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
 
 
     public interface Callback {
-        /**
-         * DetailFragmentCallback for when an item has been selected.
-         */
+
         public void onItemSelected(Uri dateUri);
     }
 
@@ -116,7 +114,6 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
 
         mForecastAdapter = new ForecastAdapter(getActivity(), null, 0);
 
@@ -234,6 +231,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
             mForecastAdapter.setUseTodayLayout(mUseTodayLayout);
         }
     }
+
 
     private void updateEmptyView() {
         if ( mForecastAdapter.getCount() == 0 ) {
