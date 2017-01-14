@@ -47,18 +47,15 @@ public class Utility {
         return DateFormat.getDateInstance().format(date);
     }
 
-
     public static final String DATE_FORMAT = "yyyyMMdd";
 
     public static String getFriendlyDayString(Context context, long dateInMillis) {
-
 
         Time time = new Time();
         time.setToNow();
         long currentTime = System.currentTimeMillis();
         int julianDay = Time.getJulianDay(dateInMillis, time.gmtoff);
         int currentJulianDay = Time.getJulianDay(currentTime, time.gmtoff);
-
 
         if (julianDay == currentJulianDay) {
             String today = context.getString(R.string.today);
@@ -68,17 +65,24 @@ public class Utility {
                     today,
                     getFormattedMonthDay(context, dateInMillis)));
         } else if ( julianDay < currentJulianDay + 7 ) {
-            // If the input date is less than a week in the future, just return the day name.
             return getDayName(context, dateInMillis);
         } else {
-            // Otherwise, use the form "Mon Jun 3"
             SimpleDateFormat shortenedDateFormat = new SimpleDateFormat("EEE MMM dd");
             return shortenedDateFormat.format(dateInMillis);
         }
     }
 
-    public static String getDayName(Context context, long dateInMillis) {
+    public static String getFullFriendlyDayString(Context context, long dateInMillis) {
 
+        String day = getDayName(context, dateInMillis);
+        int formatId = R.string.format_full_friendly_date;
+        return String.format(context.getString(
+                formatId,
+                day,
+                getFormattedMonthDay(context, dateInMillis)));
+    }
+
+    public static String getDayName(Context context, long dateInMillis) {
 
         Time t = new Time();
         t.setToNow();
@@ -164,6 +168,13 @@ public class Utility {
         return -1;
     }
 
+    public static boolean usingLocalGraphics(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        String sunshineArtPack = context.getString(R.string.pref_art_pack_sunshine);
+        return prefs.getString(context.getString(R.string.pref_art_pack_key),
+                sunshineArtPack).equals(sunshineArtPack);
+    }
+
     public static String getArtUrlForWeatherCondition(Context context, int weatherId) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String formatArtUrl = prefs.getString(context.getString(R.string.pref_art_pack_key),
@@ -197,9 +208,9 @@ public class Utility {
         return null;
     }
 
-
     public static int getArtResourceForWeatherCondition(int weatherId) {
-
+        // Based on weather code data found at:
+        // http://bugs.openweathermap.org/projects/api/wiki/Weather_Condition_Codes
         if (weatherId >= 200 && weatherId <= 232) {
             return R.drawable.art_storm;
         } else if (weatherId >= 300 && weatherId <= 321) {
@@ -227,7 +238,8 @@ public class Utility {
     }
 
     public static String getStringForWeatherCondition(Context context, int weatherId) {
-
+        // Based on weather code data found at:
+        // http://bugs.openweathermap.org/projects/api/wiki/Weather_Condition_Codes
         int stringId;
         if (weatherId >= 200 && weatherId <= 232) {
             stringId = R.string.condition_2xx;
@@ -405,7 +417,6 @@ public class Utility {
         return activeNetwork != null &&
                 activeNetwork.isConnectedOrConnecting();
     }
-
 
     @SuppressWarnings("ResourceType")
     static public @SunshineSyncAdapter.LocationStatus
