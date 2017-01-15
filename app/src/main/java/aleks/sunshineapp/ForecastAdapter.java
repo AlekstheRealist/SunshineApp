@@ -9,9 +9,6 @@ import android.widget.CursorAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * Created by Aleksreal7 on 12/22/16.
- */
 
 public class ForecastAdapter extends CursorAdapter {
 
