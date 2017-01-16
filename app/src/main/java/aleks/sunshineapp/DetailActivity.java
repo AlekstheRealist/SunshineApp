@@ -3,9 +3,6 @@ package aleks.sunshineapp;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
-/**
- * Created by Aleksreal7 on 12/22/16.
- */
 
 public class DetailActivity extends ActionBarActivity {
 
